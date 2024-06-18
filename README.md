@@ -20,7 +20,7 @@ Before starting, ensure you have the following installed on your macOS machine:
 Clone the GitHub API project repository to your local machine:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/zeto95/audibene_challenge.git
 cd github-api-project 
 ```
 
@@ -76,12 +76,16 @@ dbt init
 ```bash
 dbt --version
 ```
+### 7. Create Output Directory (data_schemas)
+```bash
+mkdir -p dbt_project/data_schemas
+```
 
-### 7. Run dbt Models
+### 8. Run dbt Models
 ```bash
 dbt run
 ```
-### 8. View Results
+### 9. View Results
 ```bash
 sqlite3 github_data.db
 

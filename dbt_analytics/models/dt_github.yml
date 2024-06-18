@@ -1,0 +1,16 @@
+version: 2 
+
+models: 
+  - name: aggregate_commits
+    columns: 
+        - name: month 
+          tests: 
+            - unique 
+            - not null 
+            
+  - name: aggregate_issues
+    columns: 
+        - name: month 
+          tests: 
+            - unique 
+            - not null 
