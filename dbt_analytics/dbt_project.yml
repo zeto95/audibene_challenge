@@ -1,0 +1,28 @@
+name: 'dbt_analytics'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_analytics'
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+
+vars:
+  my_database: "/Applications/auidbene_task2/raw_data.db"
+  my_database_type: sqlite
+
+models:
+  dbt_analytics:
+
+    aggregate_commits:  
+    +materialized: table
+
+    aggregate_issues: 
+    +materialized: table
+
+           

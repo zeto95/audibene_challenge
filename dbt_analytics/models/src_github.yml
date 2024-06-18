@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+  - name: raw_data
+    tables:
+      - name: commits
+        description: "Table containing commit data"
+      - name: issues
+        description: "Table containing issue data"
