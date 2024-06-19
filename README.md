@@ -51,7 +51,7 @@ export GITHUB_TOKEN="your_github_token_here"
 ```
 ### 5. Fetch Data from GitHub API and Store in SQLite
 ```bash
-python fetch_github_data.py
+python api_data.py
 ```
 
 ### 6. Set Up dbt Project
